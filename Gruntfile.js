@@ -23,7 +23,7 @@ module.exports = function(grunt) {
         paths: {
 
 
-            // images folder name.
+            // assets folder name.
             assets: 'assets',
 
             //  where to store compiled files.
@@ -47,6 +47,10 @@ module.exports = function(grunt) {
             // Le domaine qui héberge les images.
             remoteAssetsDomain: 'http://preprod.lahautesociete.com/petzl/petzl_newsletter/'
         },
+
+        // secrets.json is ignored in git because it contains sensitive data
+        // See the README for configuration settings
+        vault: grunt.file.readJSON('vault.json'),
 
         // Optimise les images et les place dans le dossier assets/img
         imagemin: {
@@ -107,7 +111,7 @@ module.exports = function(grunt) {
             }
         },
 
-        // Copier les images dans assets.
+        // Copier les assets (images) dans 'dist".
         copy: {
             files: {
                 cwd: '<%= paths.compile %>/', // set working folder / root to copy
@@ -135,6 +139,8 @@ module.exports = function(grunt) {
             }
         },
 
+
+        // Préfixe le chemin des images avec 'remoteAssetsDomain'. Les images doivent être préalablement placées sur le domaine 'à la main (ftp)'.
         cdn: {
             options: {
                 /** @required - root URL of your CDN (may contains sub-paths as shown below) */
@@ -158,14 +164,12 @@ module.exports = function(grunt) {
         mailgun: {
             mailer: {
                 options: {
-                    key: 'key-1fec8538295513110919aa716f91a274', // Enter your Mailgun API key here
-                    sender: 'pascal.achard@gmail.com',
-                    recipient: ['pascal@lahautesociete.com'],
-                    subject: 'Newslettr <%= grunt.template.today(\'yyyy-mm-dd - HH:MM\') %>' 
+                    key: "<%= vault.mailgun.api_key %>", // Enter your Mailgun API key here
+                    sender: "<%= vault.mailgun.sender %>",
+                    recipient: "<%= vault.mailgun.recipient %>",
+                    subject: "Newslettr <%= grunt.template.today(\'yyyy-mm-dd-HH:MM\') %>"
                 },
                 src: '<%= paths.dist %>/*.html'
-                // src: '<%= paths.dist %>/' + grunt.option('template')
-                    /*src: ['dist/*.html']*/
             }
         },
 
