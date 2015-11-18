@@ -27,4 +27,4 @@ build/Release
 node_modules
 
 # Newslettr secret data.
-.secret.js
+secret.js
