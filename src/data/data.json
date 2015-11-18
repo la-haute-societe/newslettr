@@ -1,0 +1,193 @@
+{
+	"pro": {
+		"level1": {
+			"photo": "lost.jpg",
+			"title": "ASAP : Mission protection rapproch&eacute;e permanente !",
+			"desc": "Avec son syst&egrave;me de blocage unique, l'ASAP est une r&eacute;f&eacute;rence dans la protection contre les chutes pour les travailleurs en hauteur. En cas de choc ou d'acc&eacute;l&eacute;ration brusque, il se bloque sur la corde et immobilise l'utilisateur.",
+			"button": {
+				"label": "D&eacute;couvrir",
+				"class": "pro"
+			}
+		},
+		"level2": [
+			{
+				"photo": "visuel-niveau2-shema-asap.jpg",
+				"title": "L'ASAP à l'approche d'un obstacle",
+				"desc": "La notion de tirant d'air, qui représente la hauteur minimale libre sous l'ASAP, est déterminante pour que l'utilisateur ne heurte pas d'obstacles en cas de chute.",
+				"button": {
+					"label": "EN SAVOIR PLUS",
+					"picto": "puce-link-yellow.gif"
+				}
+			},
+			{
+				"photo": "visuel-niveau2-matos-pro.jpg",
+				"title": "ASAP'SORBER, le compl&eacute;ment id&eacute;al !",
+				"desc": "La longe ASAP'SORBER se connecte &agrave; l'antichute mobile ASAP pour permettre &agrave; l'utilisateur de travailler &agrave; distance de la corde afin de le prot&eacute;ger pendant son travail.",
+				"button": {
+					"label": "EN SAVOIR PLUS",
+					"picto": "puce-link-yellow.gif"
+				}
+			}
+		],
+		"level3": [
+			{
+				"photo": "visuel-niveau3-rappel.jpg",
+				"title": "PARTICIPEZ AU PETZL ROPETRIP !",
+				"desc": "Les cordistes du monde entier ont rendez-vous &agrave; Uppsala pour un nouveau challenge comp&eacute;titif. Rejoignez-les&nbsp;!",
+				"button": {
+					"label": "",
+					"picto": "puce-link-yellow.gif"
+				}
+			},
+			{
+				"photo": "visuel-niveau3-frontale.jpg",
+				"title": "AU SERVICE DE LA LUMI&Egrave;RE",
+				"desc": "Lampe frontale rechargeable, multifaisceau et b&eacute;n&eacute;ficiant de la technologie Constant Lighting de Petzl. A d&eacute;couvrir&nbsp;!",
+				"button": {
+					"label": "",
+					"picto": "puce-link-yellow.gif"
+				}
+			},
+			{
+				"photo": "visuel-niveau3-evac.jpg",
+				"title": "L'&Eacute;VACUATION DES REMONT&Eacute;ES M&Eacute;CANIQUES",
+				"desc": "L'hiver approchant &agrave; grand pas, d&eacute;couvrez la gestion des situations d'urgence en stations.",
+				"button": {
+					"label": "",
+					"picto": "puce-link-yellow.gif"
+				}
+			}
+		],
+		"level4": [
+			{
+				"day": "14",
+				"month": "NOV",
+				"desc": "25 &egrave;me UTMB - Chamonix",
+				"button": {
+					"label": "",
+					"picto": "puce-link-grey.gif"
+				}
+			},
+			{
+				"day": "16",
+				"month": "NOV",
+				"desc": "Le Petzl Roc Trip s'envole pour l'Europe de l'Est",
+				"button": {
+					"label": "",
+					"picto": "puce-link-grey.gif"
+				}
+			}
+		]
+	},
+	"sport": {
+		"level1": {
+			"photo": "visuel-event-nao-1.jpg",
+			"title": "METEOR : La r&eacute;f&eacute;rence pour la pratique de l'escalade et de l'alpinisme",
+			"desc": "Casque l&eacute;ger et polyvalent qui b&eacute;n&eacute;ficie de grandes ouvertures pour une excellente ventilation. Son syst&egrave;me de r&eacute;glage innovant permet &agrave; chaque grimpeur d'ajuster le casque en fonction de sa morphologie, et de le fermer d'une seule main gr&acirc;ce &agrave; la nouvelle boucle magn&eacute;tique.",
+			"button": {
+				"label": "D&eacute;couvrir ce casque",
+				"class": "tutu"
+			}
+		},
+		"level2": [
+			{
+				"photo": "visuel-niveau2-grimpeur.jpg",
+				"title": "Le plus mauvais assureur du monde",
+				"desc": "En escalade ou en alpinisme, le bon usage des appareils d'assurage est la cl&eacute; de vo&ucirc;te de la cha&icirc;ne d'assurage.",
+				"button": {
+					"label": "VOIR LA VID&Eacute;O",
+					"picto": "puce-link.gif"
+				}
+			},
+			{
+				"photo": "visuel-niveau2-shema-moulinette.jpg",
+				"title": "Comment installer une moulinette ?",
+				"desc": "En falaise, l'installation d'une moulinette est une technique de base indispensable &agrave; ma&icirc;triser.",
+				"button": {
+					"label": "VOIR LA VID&Eacute;O",
+					"picto": "puce-link-yellow.gif"
+				}
+			}
+		],
+		"level3": [
+			{
+				"photo": "visuel-niveau3-grimpeuse.jpg",
+				"title": "LIV SANSOZ AU SOMMET !",
+				"desc": "Tout juste de retour du Yosemite, Liv revient sur son ascencion de The Nose, une voie mythique. Suspendisse in odio non dui convallis tempus vitae et urna.",
+				"button": {
+					"label": "",
+					"picto": "puce-link.gif"
+				}
+			},
+			{
+				"photo": "visuel-niveau3-rocktrip.jpg",
+				"title": "C'EST REPARTI POUR LE ROC TRIP",
+				"desc": "Ambiance conviviale, sites exceptionnels, escalade magique,... Le Roc Trip met le cap sur l'Europe de l'Est.",
+				"button": {
+					"label": "",
+					"picto": "puce-link.gif"
+				}
+			},
+			{
+				"photo": "visuel-niveau3-runner.jpg",
+				"title": "L'UTMB APPROCHE À GRAND PAS",
+				"desc": "Le d&eacute;part sera donn&eacute; le vendredi 29 ao&ucirc;t, pour une &eacute;dition qui s'annonce d&eacute;j&agrave; exceptionnelle. Parole de Kilian Jornet&nbsp;!",
+				"button": {
+					"label": "",
+					"picto": "puce-link.gif"
+				}
+			}
+		],
+		"level4": [
+			{
+				"day": "14",
+				"month": "NOV",
+				"desc": "25 &egrave;me UTMB - Chamonix",
+				"button": {
+					"label": "",
+					"picto": "puce-link-grey.gif"
+				}
+			},
+			{
+				"day": "16",
+				"month": "NOV",
+				"desc": "Le Petzl Roc Trip s'envole pour l'Europe de l'Est",
+				"button": {
+					"label": "",
+					"picto": "puce-link-grey.gif"
+				}
+			}
+		]
+	},
+	"event": {
+		"level1": {
+			"photo": "visuel-event-nao-1.jpg",
+			"title": "NAO",
+			"desc": "Puissance & intelligence pour illuminer vos aventures&nbsp;!"
+		},
+		"level2": {
+			"photo": "visuel-event-nao-2.jpg",
+			"desc": "La NAO est la lampe frontale multifaisceau ultra-puissante et rechargeable. Elle est &eacute;quip&eacute;e de la technologie REACTIVE LIGHTING qui adapte automatiquement l'intensit&eacute; lumineuse. Une plus grande autonomie, mais aussi plus de confort et moins d'interventions manuelles.",
+			"list": [
+				{
+					"label": "- Puissance d'éclairage maximum : 575 lumens"
+				},
+				{
+					"label": "- Batterie rechargeable Lithium-Ion"
+				},
+				{
+					"label": "- Type de faisceau : large et mixte"
+				},
+				{
+					"label": "- Etanchéité : IP  X4 (résistante aux intempéries)"
+				},
+				{
+					"label": "- Poids : 187 g"
+				}
+			],
+			"button": {
+				"label": "D&eacute;couvrir ce produit"
+			}
+		}
+	}
+}

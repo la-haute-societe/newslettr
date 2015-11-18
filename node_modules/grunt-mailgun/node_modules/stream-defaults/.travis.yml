@@ -1,0 +1,13 @@
+language: node_js
+node_js:
+- '0.11'
+- '0.10'
+deploy:
+  provider: npm
+  email: mark@segfawlt.net
+  api_key:
+    secure: TO1UN4lxMCfBXu0Hh+x89nPCcZW+hSElMWGu3DaDLdqmxgmH3dCK/YCucIoPDdk7lmdOSw3oDbJXSX8jYR8W+hMRBvYE1l/U3hboIP90Nf68Cbd/zWd1BLxvKIridx+ZAOt42dNr1t9FC47XTJC4GGYte/SoCbugtU4aHAUp5bk=
+  on:
+    tags: true
+    repo: markhuge/stream-defaults
+    all_branches: true

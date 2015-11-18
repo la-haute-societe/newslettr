@@ -1,0 +1,92 @@
+/*////// MOBILE STYLES //////*/
+@media only screen and (max-width: 480px)
+{
+	/*////// CLIENT-SPECIFIC STYLES //////*/
+	body
+	{
+		width: 100% !important;
+		min-width: 100% !important;
+	} /* Force iOS Mail to render the email at full width. */
+
+	/*////// FRAMEWORK STYLES //////*/
+	/*
+		CSS selectors are written in attribute
+		selector format to prevent Yahoo Mail
+		from rendering media query styles on
+		desktop.
+	*/
+	table[id='emailBody'],
+	table[class='flexibleContainer']
+	{
+		width: 100% !important;
+	}
+
+	/*
+		The following style rule makes any
+		image classed with 'flexibleImage'
+		fluid when the query activates.
+		Make sure you add an inline max-width
+		to those images to prevent them
+		from blowing out. 
+	*/
+	img[class='flexibleImage']
+	{
+		width: 100% !important;
+		height: auto !important;
+	}
+
+	/*
+		Make buttons in the email span the
+		full width of their container, allowing
+		for left- or right-handed ease of use.
+	*/
+	/*table[class='emailButton']
+	{
+		width: 100% !important;
+	}
+	td[class='buttonContent']
+	{
+		padding: 0 !important;
+	}
+	td[class='buttonContent'] a
+	{
+		padding: 15px !important;
+	}*/
+
+	td[class='textContentLast'],
+	td[class='imageContentLast']
+	{
+		padding-top: 20px !important;
+	}
+
+	/* Force table cells into rows */
+	td[class="hh-force-col"],
+	td[class="hh-force-col-center"] {
+		display: block !important;
+		width: 100% !important;
+		clear: both;
+	}
+	/* And center these ones */
+	td[class="hh-force-col-center"] {
+		text-align: center !important;
+	}
+
+	/*////// GENERAL STYLES //////*/
+	/*td[id='bodyCell']
+	{
+		padding-top: 10px !important;
+
+		padding-right: 10px !important;
+		padding-left: 10px !important;
+	}*/
+	
+	// Sur mobile on rend visible les éléments invisible
+	td[class="hidden"] {
+		display: none;
+	}
+
+	// Sur mobile on centre le logo.
+	td[class="emailHeader"] {
+		text-align: center !important;
+	}
+}
