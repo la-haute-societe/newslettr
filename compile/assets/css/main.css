@@ -10,38 +10,6 @@
 @extra-large-plus-value : 12rem; // extra large value for margins / paddings
 @ultra-large-value      : 16rem; // ultra large value for margins / paddings
 @ultra-large-plus-value : 20rem; // ultra large value for margins / paddings*/
-body,
-#bodyTable,
-#bodyCell {
-  width: 100% !important;
-  height: 100% !important;
-  margin: 0;
-  padding: 0;
-}
-table {
-  border-collapse: collapse;
-}
-table td {
-  /*line-height: 0;*/
-}
-img,
-a img {
-  text-decoration: none;
-  border: 0;
-  outline: none;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-  padding: 0;
-}
-p {
-  margin: 1em 0;
-}
 .ReadMsgBody {
   width: 100%;
 }
@@ -83,6 +51,181 @@ blockquote {
   -webkit-text-size-adjust: 100%;
 }
 /* Prevent Windows- and Webkit-based mobile platforms from changing declared text sizes. */
+/* ----------------------------- */
+/* == soft reset                 */
+/* ----------------------------- */
+body {
+  width: 100% !important;
+  height: 100% !important;
+  margin: 0;
+  padding: 0;
+}
+table {
+  border-collapse: collapse;
+}
+table td {
+  /*line-height: 0;*/
+}
+img,
+a img {
+  text-decoration: none;
+  border: 0;
+  outline: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+p {
+  margin: 1em 0;
+}
+/* ----------------------------- */
+/* == typography                 */
+/* ----------------------------- */
+.arial {
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: normal;
+}
+.arialBold {
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 700;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #000;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: Left;
+}
+h1,
+.h1-like {
+  font-size: 32px;
+  font-family: Helvetica, Arial, sans-serif;
+}
+h2,
+.h2-like {
+  font-size: 28px;
+  font-family: Helvetica, Arial, sans-serif;
+}
+h3,
+.h3-like {
+  font-size: 24px;
+}
+h4,
+.h4-like {
+  font-size: 20px;
+}
+h5,
+.h5-like {
+  font-size: 18px;
+}
+h6,
+.h6-like {
+  font-size: 16px;
+}
+a {
+  color: #333;
+}
+a:hover,
+a:focus,
+a:active {
+  color: #000;
+}
+body,
+#bodyTable {
+  background-color: #fff;
+}
+#bodyCell {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+#emailBody {
+  background-color: #fff;
+  border: 1px solid #DDDDDD;
+  border-collapse: separate;
+  border-radius: 4px;
+}
+.textContent,
+.textContentLast {
+  color: #000;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 125%;
+  text-align: Left;
+  padding-bottom: 20px;
+}
+/*
+.textContent a, .textContentLast a {
+	color: #2C9AB7;
+	text-decoration: underline;
+}
+*/
+.nestedContainer {
+  background-color: #fff;
+  border: 1px solid #CCCCCC;
+}
+.emailButton {
+  background-color: #2C9AB7;
+  border-collapse: separate;
+  border-radius: 4px;
+}
+.buttonContent {
+  color: #000;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 100%;
+  padding: 15px;
+  text-align: center;
+}
+.buttonContent a {
+  color: #333;
+  display: block;
+  text-decoration: none;
+}
+/*.emailCalendar {
+	background-color: #FFFFFF;
+	border: 1px solid #CCCCCC;
+}
+
+.emailCalendarMonth {
+	background-color: #2C9AB7;
+	color: #FFFFFF;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+}
+
+.emailCalendarDay {
+	color: #2C9AB7;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 60px;
+	font-weight: bold;
+	line-height: 100%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: center;
+}*/
+#bodyTable,
+#bodyCell {
+  width: 100% !important;
+  height: 100% !important;
+  margin: 0;
+  padding: 0;
+}
 .flexibleContainerCell {
   padding-top: 20px;
   padding-Right: 20px;
@@ -97,104 +240,6 @@ blockquote {
 .imageContent,
 .imageContentLast {
   padding-bottom: 20px;
-}
-/**
- * FONTS
- */
-.arial {
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: normal;
-}
-.arialBold {
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 700;
-}
-body,
-#bodyTable {
-  background-color: #F5F5F5;
-}
-#bodyCell {
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
-#emailBody {
-  background-color: #FFFFFF;
-  border: 1px solid #DDDDDD;
-  border-collapse: separate;
-  border-radius: 4px;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: #202020;
-  font-family: Helvetica;
-  font-size: 20px;
-  line-height: 125%;
-  text-align: Left;
-}
-.textContent,
-.textContentLast {
-  color: #404040;
-  font-family: Helvetica;
-  font-size: 16px;
-  line-height: 125%;
-  text-align: Left;
-  padding-bottom: 20px;
-}
-.textContent a,
-.textContentLast a {
-  color: #2C9AB7;
-  text-decoration: underline;
-}
-.nestedContainer {
-  background-color: #E5E5E5;
-  border: 1px solid #CCCCCC;
-}
-.emailButton {
-  background-color: #2C9AB7;
-  border-collapse: separate;
-  border-radius: 4px;
-}
-.buttonContent {
-  color: #FFFFFF;
-  font-family: Helvetica;
-  font-size: 18px;
-  font-weight: bold;
-  line-height: 100%;
-  padding: 15px;
-  text-align: center;
-}
-.buttonContent a {
-  color: #FFFFFF;
-  display: block;
-  text-decoration: none;
-}
-.emailCalendar {
-  background-color: #FFFFFF;
-  border: 1px solid #CCCCCC;
-}
-.emailCalendarMonth {
-  background-color: #2C9AB7;
-  color: #FFFFFF;
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  font-weight: bold;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  text-align: center;
-}
-.emailCalendarDay {
-  color: #2C9AB7;
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 60px;
-  font-weight: bold;
-  line-height: 100%;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  text-align: center;
 }
 @media only screen and (max-width: 480px) {
   /*////// CLIENT-SPECIFIC STYLES //////*/

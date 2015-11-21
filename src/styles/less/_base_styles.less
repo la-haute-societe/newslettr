@@ -1,0 +1,203 @@
+
+/* ----------------------------- */
+/* == soft reset                 */
+/* ----------------------------- */
+body
+{
+	width: 100% !important;
+	height: 100% !important;
+	margin: 0;
+	padding: 0;
+}
+table
+{
+	border-collapse: collapse;
+
+	td {
+		/*line-height: 0;*/
+	}
+
+
+}
+img,
+a img
+{
+	text-decoration: none;
+
+	border: 0;
+	outline: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+{
+	margin: 0;
+	padding: 0;
+}
+p
+{
+	margin: 1em 0;
+}
+
+
+
+
+/* ----------------------------- */
+/* == typography                 */
+/* ----------------------------- */
+
+.arial {
+	font-family: @font-stack-common;
+	font-weight: normal;
+}
+
+.arialBold {
+	font-family: @font-stack-common;
+	font-weight: 700;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+	color: @headings-color;
+	font-family: @font-stack-headings;
+	font-size: 20px;
+	line-height: @line-height;
+	text-align: Left;
+}
+
+h1,
+.h1-like {
+	font-size: @h1-size;
+	font-family: @font-stack-headings;
+}
+
+h2,
+.h2-like {
+	font-size: @h2-size;
+	font-family: @font-stack-headings;
+}
+
+h3,
+.h3-like {
+	font-size: @h3-size;
+}
+
+h4,
+.h4-like {
+	font-size: @h4-size;
+}
+
+h5,
+.h5-like {
+	font-size: @h5-size;
+}
+
+h6,
+.h6-like {
+	font-size: @h6-size;
+}
+
+a {
+	color: @base-color-link;
+	&:hover, &:focus, &:active {
+		color: @base-color-link-hover;
+	}
+}
+
+
+///////////////////////////////////////////
+// MAILCHIMP - GENERAL STYLE
+///////////////////////////////////////////
+body, #bodyTable {
+	background-color: @base-background;
+}
+
+#bodyCell {
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+#emailBody {
+	background-color: @primary-background;
+	border: 1px solid #DDDDDD;
+	border-collapse: separate;
+	border-radius: 4px;
+}
+
+
+.textContent, .textContentLast {
+	color: @base-color;
+	font-family: @font-stack-common;
+	font-size: 16px;
+	line-height: 125%;
+	text-align: Left;
+	padding-bottom: 20px;
+}
+
+/*
+.textContent a, .textContentLast a {
+	color: #2C9AB7;
+	text-decoration: underline;
+}
+*/
+
+.nestedContainer {
+	background-color: @secondary-background;
+	border: 1px solid #CCCCCC;
+}
+
+.emailButton {
+	background-color: #2C9AB7;
+	border-collapse: separate;
+	border-radius: 4px;
+}
+
+.buttonContent {
+	color: @base-color;
+	font-family: @font-stack-common;
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 100%;
+	padding: 15px;
+	text-align: center;
+}
+
+.buttonContent a {
+	color: @base-color-link;
+	display: block;
+	text-decoration: none;
+}
+
+/*.emailCalendar {
+	background-color: #FFFFFF;
+	border: 1px solid #CCCCCC;
+}
+
+.emailCalendarMonth {
+	background-color: #2C9AB7;
+	color: #FFFFFF;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+}
+
+.emailCalendarDay {
+	color: #2C9AB7;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 60px;
+	font-weight: bold;
+	line-height: 100%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: center;
+}*/
+
+
+
+
