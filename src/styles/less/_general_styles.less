@@ -1,482 +1,116 @@
 
-/**
- * COLORS
- */
- 
-@generalBackground : #d5d5d5;
-
-
-// Aplats
-@aplat_white : #ffffff;
-@aplat_orange : #f38f10;
-@aplat_yellow : #ffd500;
-@aplat_greylight3 : #f5f5f5;
-@aplat_greyDark : #1a1a1a;
-
-
-//Tracés
-@traces_orange2 : #d98110;
-@traces_yellow2 : #e6c002;
-@traces_greymedium : #e1e1e1;
-@traces_greymedium2 : #bebebe;
-/*@traces_greylight2 : #a4a4a4;
-@traces_greymedium : #666666;
-@traces_greymedium2 : #d7d7d7;
-@traces_greystrong : #464646;
-@traces_fushia : #e2007a;
-@traces_triplePlay : #e8e8e8;*/
-
-//Typos
-@typos_white : #ffffff;
-@typos_black : #000000;
-@typos_orange : #f38f10;
-@typos_greylight : #d5d5d5;
-@typos_greylight2 : #898989;
-@typos_greylight3 : #b2b2b2;
-@typos_greymedium : #515151;
-@typos_greymedium2 : #434343;
-@typos_greymedium3 : #707070;
-@typos_greystrong : #252525;
 
 /**
  * FONTS
  */
 
-.arial{
-	font-family : Arial, Helvetica, sans-serif;
-	font-weight : normal;
+.arial {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
 }
 
-.arialBold{
-	font-family : Arial, Helvetica, sans-serif;
-	font-weight : 700;
+.arialBold {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 700;
 }
 
 
-/**{
-	margin: 0;
-	padding: 0;
-	font-family: "Arial", Arial, Helvetica, sans-serif;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-	font-size: 16px;
-}*/
 
-
-
-body,
-#bodyTable
-{
-	background-color: @generalBackground;
+///////////////////////////////////////////
+// MAILCHIMP - GENERAL STYLE
+///////////////////////////////////////////
+body, #bodyTable {
+	background-color: #F5F5F5;
 }
-#bodyCell
-{
-	padding-top: 0;
-	padding-bottom: 0;
+
+#bodyCell {
+	padding-top: 40px;
+	padding-bottom: 40px;
 }
-#emailBody
-{
+
+#emailBody {
+	background-color: #FFFFFF;
+	border: 1px solid #DDDDDD;
 	border-collapse: separate;
-
-	/*border: 1px solid #ddd;
-	border-radius: 4px;*/
-	background-color: @aplat_white;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6
-{
-	.arial;
-	line-height: 110%;
-	text-align: left;
+	border-radius: 4px;
 }
 
-h3 {
-	font-size: 30px;
-	color: @typos_greystrong;
+h1, h2, h3, h4, h5, h6 {
+	color: #202020;
+	font-family: Helvetica;
+	font-size: 20px;
+	line-height: 125%;
+	text-align: Left;
 }
 
-h4 {
-	font-size: 24px;
-	color: @typos_greystrong;
-}
-
-h5 {
-	font-size: 18px;
-	color: @typos_greystrong !important;
-}
-
-h6 {
-	color: @typos_orange;
-	font-size: 14px;
-}
-
-a {
-	text-decoration: none;
-	color: @typos_black;
-	
-	&:visited {
-		color: @typos_black;
-	}
-
-	&:hover{
-		color: @typos_black;
-	}
-}
-
-
-.textContent,
-.textContentLast
-{
-	.arial;
+.textContent, .textContentLast {
+	color: #404040;
+	font-family: Helvetica;
 	font-size: 16px;
 	line-height: 125%;
-
+	text-align: Left;
 	padding-bottom: 20px;
-
-	text-align: left;
-
-	color: @typos_greymedium2;
-	p {
-		color: @typos_greymedium2;
-	}
-
-	a {
-		text-decoration: none;
-		color: @typos_greymedium2;
-	}
 }
 
+.textContent a, .textContentLast a {
+	color: #2C9AB7;
+	text-decoration: underline;
+}
 
-.emailButton
-{
+.nestedContainer {
+	background-color: #E5E5E5;
+	border: 1px solid #CCCCCC;
+}
+
+.emailButton {
+	background-color: #2C9AB7;
 	border-collapse: separate;
-
-	border-radius: 3px;
-	border-color: @traces_orange2;
-	border-width: 1px;
-	border-style: solid;
-	background-color: @aplat_orange;
-
-	&.pro {
-		border-color: @traces_yellow2;
-		background-color: @aplat_yellow;
-
-		.buttonContent > a {
-			color: #1a1a1a;
-		}
-	}
+	border-radius: 4px;
 }
-.buttonContent
-{
-	padding: 12px 20px;
+
+.buttonContent {
+	color: #FFFFFF;
+	font-family: Helvetica;
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 100%;
+	padding: 15px;
 	text-align: center;
-	color: @typos_white;
-	.arialBold;
-	font-size: 12px;
-	line-height: 12px;
-
-	> a {
-		.arialBold;
-		font-size: 12px;
-		line-height: 12px;
-		/*display: block;*/
-
-		text-decoration: none;
-
-		color: @typos_white;
-	}
 }
 
-/**
- * Le bloc links.
- */
-.link {
-	.arialBold;
-	font-size: 12px;
-	line-height: 12px;
-	margin-top: 20px;
-	color: @typos_black;
-
-	a {
-		color: @typos_black;
-	}
-	
+.buttonContent a {
+	color: #FFFFFF;
+	display: block;
+	text-decoration: none;
 }
 
-/**
- * Le picto link
- */
-.pictoLink {
-	vertical-align: middle;
-	margin-bottom: 2px;
-	/*margin-left: 8px;*/
+.emailCalendar {
+	background-color: #FFFFFF;
+	border: 1px solid #CCCCCC;
 }
 
-/**
- * Le bloc agenda
- */
-.agendaBlock {
-	border-radius: 3px;
-	border-color: @traces_greymedium;
-	border-width: 1px;
-	border-style: solid;
-	background-color: @aplat_greylight3;
-	border-collapse: separate;
+.emailCalendarMonth {
+	background-color: #2C9AB7;
+	color: #FFFFFF;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+}
 
-	.agendaDay {
-		padding: 7px 0 0 0;
-			text-align: center;
-			.arialBold;
-			font-size: 22px;
-			line-height: 20px;
-			color: @typos_greymedium3;
-			text-decoration: none;
-
-			a{
-				color: @typos_greymedium3;
-			}
-		
-		
-	}
-
-	.agendaMonth {
-		padding: 2px 0 8px 0;
-		
-			text-align: center;
-			.arialBold;
-			font-size: 11px;
-			line-height: 10px;
-			color: @typos_greymedium3;
-			text-decoration: none;
-			a{
-				color: @typos_greymedium3;
-			}
-	}
+.emailCalendarDay {
+	color: #2C9AB7;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 60px;
+	font-weight: bold;
+	line-height: 100%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: center;
 }
 
 
-/**
- * Le header de l'email
- */
-#emailHeader {
-	text-align: left;
-	line-height: 0;
-	font-size: 0;
-}
-
-/**
- * Le footer de l'email
- */
-#emailFooter {
-
-	padding-top: 0px;
-	padding-bottom: 30px;
-
-	.emailFooterSep {
-		width: 100%;
-
-		.emailFooterSepContent {
-			height: 1px;
-			background-color: @traces_greymedium2;
-			line-height: 0;
-			font-size: 0;
-		}
-	}
-
-	.textContent {
-		text-align: center;
-		.arial;
-		font-size: 12px;
-		padding: 12px 0 14px 0;
-	}
-
-	/*.emailFooterPictos {
-		> img {
-			padding: 0 2px;
-		}
-	}*/
-}
-
-
-/**
- * post-footer
- */
-#postFooter {
-	padding-top: 30px;
-	padding-bottom: 100px;
-	background: @generalBackground;
-
-	.postFooterContent {
-		.textContent {
-			
-			padding: 0;
-			text-align: center;
-			.arial;
-			font-size: 11px;
-			line-height: 13px;
-			color: @typos_greymedium !important;
-
-			a {
-				color: @typos_greymedium;
-				text-decoration: underline;
-			}
-
-		}
-	}
-}
-
-
-/**
- * Le niveau 1
- */
-.level1 {
-	background-color: @aplat_greylight3;
-
-	padding-bottom: @vertical_spacing;
-
-	p {
-		margin: 15px 0 0 0;
-		line-height: 22px;
-		color: @typos_greymedium2 !important;
-	}
-
-	.textContent {
-		padding-top: 40px;
-		padding-bottom: 30px;
-	}
-}
-
-/**
- * Le niveau 2
- */
-.level2 {
-	padding-top: @vertical_spacing;
-	padding-bottom: @vertical_spacing - 40px;
-
-	// Le texte.
-	p {
-		.arial;
-		font-size: 14px;
-		margin: 9px 0;
-		color: @typos_greymedium2 !important;
-	}
-
-	.textContent {
-		padding-bottom: 40px;
-	}
-}
-
-/**
- * Le niveau 3
- */
-.level3 {
-	padding-top: @vertical_spacing;
-	padding-bottom: @vertical_spacing - 40;
-
-
-	h5 {
-
-	}
-
-	// Le texte.
-	p {
-		.arial;
-		font-size: 14px;
-		margin: 4px 0;
-		color: @typos_greymedium2 !important;
-	}
-
-	.textContent {
-		padding-bottom: @vertical_spacing2;
-		vertical-align: top;
-	}
-}
-
-
-/**
- * Le niveau 4
- */
-.level4 {
-	padding-top: @vertical_spacing;
-	padding-bottom: @vertical_spacing - 20px;
-
-	h6 {
-		margin-bottom: 28px;
-	}
-	
-	.agendaItem {
-		width: 100%;
-
-		.textContent {
-			padding: 0;
-			.arial;
-			font-size: 18px;
-			color: @typos_black;
-			a{
-				color: @typos_black;
-			}
-		}
-	}
-}
-
-/**
- * Le niveau 1 de l'email "event"
- */
-.eventLevel1{
-	background-color: @aplat_greyDark;
-
-	padding-bottom: 0;
-
-	h3 {
-		text-align: center;
-		color: @typos_greylight3;
-	}
-
-	p {
-		text-align: center;
-		margin: 15px 0 0 0;
-		font-size: 18px;
-		line-height: 22px;
-		color: @typos_greylight3;
-	}
-
-	.textContent {
-		padding-top: 30px;
-		padding-bottom: 40px;
-	}
-}
-
-/**
- * Le niveau 2 de l'email "event"
- */
-.eventLevel2 {
-	padding-top: 40px;
-	padding-bottom: @vertical_spacing;
-
-	// Le texte.
-	p {
-		.arial;
-		font-size: 14px;
-		margin: 9px 0;
-		color: @typos_greymedium2 !important;
-	}
-
-	.textContent {
-		padding-bottom: 20px;
-		p {
-			margin: 0;
-		}
-	}
-
-	.imageContentLast {
-		padding-bottom: 20px;
-		text-align: center;
-	}
-}
 
 

@@ -29,3 +29,6 @@ node_modules
 # Newslettr secret data.
 secrets.json
 vault.json
+
+# intellij
+.idea
