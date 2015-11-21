@@ -30,5 +30,6 @@ node_modules
 secrets.json
 vault.json
 
-# intellij
+# Project Specific
 .idea
+dist
