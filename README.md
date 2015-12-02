@@ -1,2 +1,2 @@
 # newslettr
-Grunt based email workflow
+Grunt based email workflow (work in progress)
