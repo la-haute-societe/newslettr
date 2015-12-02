@@ -1,0 +1,7 @@
+{
+  "mailgun": {
+    "api_key": "XXXXXXXXXXXXXXXXXXXXXX",
+    "sender": "sender email",
+    "recipient": ["recipient emails"]
+  }
+}
